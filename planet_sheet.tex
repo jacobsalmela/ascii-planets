@@ -1,0 +1,69 @@
+% !TEX TS-program = XeLaTeX
+% Any larger font size doesn't seem to fit everything into the single page
+\documentclass[a4paper,landscape,8pt]{extarticle}
+% Load packages
+\input{planet_sheet/libs.tex}
+% Load global configs
+\input{planet_sheet/config.tex}
+% This entire Planet Sheet is basically broken out into several finely-tuned minipages
+% You can turn on their borders in the config file above, but things don't quite fit when you do that
+% This was a little troublesome to fit all this in due to the way LaTeX tries to help position elements
+% but it does work for the most part.
+\begin{document}
+\fbox{
+\begin{minipage}[t]{2.5in}
+  \input{logo.tex}
+  \input{planet_sheet/version.tex}
+\end{minipage}
+}
+\fbox{
+\begin{minipage}[t]{8in}
+  \input{planet_sheet/player.tex}
+  \input{planet_sheet/buildings.tex}
+\end{minipage}
+}
+\newline
+\fbox{
+\begin{minipage}[t]{4.6in}
+  \input{planet_sheet/population.tex}
+  \newline
+  \input{planet_sheet/military.tex}
+\end{minipage}
+}
+\fbox{
+\begin{minipage}[t]{2in}
+  \input{planet_sheet/currency.tex}
+\end{minipage}
+}
+\fbox{
+\begin{minipage}[t]{3.6in}
+  \input{planet_sheet/trade.tex}
+\end{minipage}
+}
+\newline
+\fbox{
+\begin{minipage}[t]{2.5in}
+  \input{planet_sheet/legend.tex}
+  \input{planet_sheet/happiness.tex}
+  \input{planet_sheet/turns.tex}
+\end{minipage}
+}
+\fbox{
+\begin{minipage}[t]{5.5in}
+  \input{planet_sheet/technology.tex}
+  \newline
+  \newline
+  \input{planet_sheet/planet.tex}
+\end{minipage}
+}
+\fbox{
+\begin{minipage}[t]{2.4in}
+  \input{planet_sheet/culture.tex}
+  \input{planet_sheet/anytime.tex}
+  \input{planet_sheet/scoring.tex}
+  \newline
+  \newline
+  \input{planet_sheet/copyright.tex}
+\end{minipage}
+}
+\end{document}

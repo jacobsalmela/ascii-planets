@@ -1,0 +1,31 @@
+% !TEX TS-program = XeLaTeX
+% Adjust the margins of the document
+\title{ASCII Planets}
+% Original game, ASCII Planets, Copyright (C) 2019 Topi Turunen, https://ae.tptrnn.fi/
+\author{Jacob Salmela}
+% Set today as the time when this doc was generated
+\date{\today}
+% Needed for smaller font size
+\usepackage{extsizes}
+% Default to A4 since it's bigger, but don't break letter paper size so it prints fine there, too
+\usepackage[a4paper, total={8.5in, 11in},margin=5mm,top=10mm,left=10mm,right=5mm]{geometry}
+% For fonts
+\usepackage{fontspec}
+% The majority of the tables need multiple columns
+\usepackage{multicol}
+% For ASCII art
+\usepackage{listings}
+% All these are used for making the fancy tables
+\usepackage{multirow} % tlmgr install multirow
+\usepackage{tabularx}
+% Helps with borders around tables with color in their cells
+\usepackage{hhline}
+\usepackage{graphicx} % for gold table
+% For colors
+\usepackage[table]{xcolor}
+% Keep tables in place
+\usepackage{float}
+\floatstyle{boxed}
+% \restylefloat{table}
+% loops for planet.tex
+\usepackage{pgffor}
