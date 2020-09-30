@@ -1,6 +1,10 @@
-
 name: build latex document
-on: [push]
+on:
+  push:
+    # Just build the docs for anything that's not master
+    branches-ignore:
+      - master
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
