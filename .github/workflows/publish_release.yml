@@ -46,6 +46,10 @@ jobs:
           name: ascii_planets
           path: ./*.pdf
 
+      - name: adjust permissions
+        run: |
+          sudo chown -R $USER:$(id -gn $USER) ./
+
       - uses: actions/download-artifact@v2
         with:
           name: ascii_planets
