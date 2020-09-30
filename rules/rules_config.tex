@@ -1,0 +1,57 @@
+% !TEX TS-program = XeLaTeX
+% Colors
+\usepackage{xcolor}
+% Heading color
+\definecolor{sections}{HTML}{B75F29}
+% For fonts
+\usepackage{fontspec}
+% Set serifed font
+\setmainfont[
+    Path=./fonts/Lato/,
+    Extension = .ttf,
+    UprightFont = *-Light,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic
+]{Lato}
+\setsansfont[
+    Path=./fonts/Courier_Prime/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic
+]{CourierPrime}
+% Set sans serif font
+\setmonofont[
+    Path=./fonts/Courier_Prime/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic
+]{CourierPrime}
+\usepackage{hhline}
+% No indents on new paragraphs
+\setlength{\parindent}{0pt}
+% Different font for section headings
+\usepackage[sf]{titlesec}
+% Set formats for each heading level
+\titleformat*{\section}{\Huge\bfseries\sffamily\color{sections}}
+\titleformat*{\subsection}{\large\bfseries\sffamily\color{sections}}
+\titleformat*{\subsubsection}{\itshape\subsubsectionfont}
+% Remove newlines from bullet lists
+\usepackage{enumitem}
+% Remove space between bulleted items
+\setlist{noitemsep}
+\usepackage{ragged2e}
+% For ASCII art
+\usepackage{listings}
+% Linking within the doc
+\usepackage{hyperref}
+% Fix links not working to sections
+% https://tex.stackexchange.com/questions/123666/nameref-breaks-for-star-versions-of-section-paragraph-when-titlesec-is-loaded
+% \makeatletter
+% \def\ttl@useclass#1#2{
+%   \@ifstar
+%     {\ttl@labelfalse\@dblarg{#1{#2}}}% {\ttl@labelfalse#1{#2}[]}%
+%     {\ttl@labelfalse\@dblarg{#1{#2}}}
+% }
+% \makeatother

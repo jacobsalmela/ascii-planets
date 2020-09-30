@@ -1,0 +1,137 @@
+% !TEX TS-program = XeLaTeX
+% \title{ASCII Planets}
+% \author{Jacob Salmela}
+% Config
+\documentclass[12pt,a4paper,twocolumn,titlepage]{article}
+% Make the gap between columns a little bigger then the default
+\setlength{\columnsep}{0.6in}
+% Default to A4 since it's bigger, but don't break letter paper size so it prints fine there, too
+\usepackage[a4paper,total={8.5in,11in},top=1in,bottom=1in,left=0.7in,right=0.7in]{geometry}
+
+% LaTeX config
+\input{rules/rules_config.tex}
+% Include naming convention and font styles for consistency across the doc
+\input{rules/rules_conventions.tex}
+
+\begin{document}
+\begin{titlepage}
+  \input{rules/rules_titlepage.tex}
+\end{titlepage}
+
+\input{rules/rules_abstract}
+
+\section{Components}
+\label{sec:components}
+\input{rules/rules_components.tex}
+
+\section{Setup}
+\label{sec:setup}
+\input{rules/rules_setup.tex}
+%TODO Center this instead of using whitespace
+% \input{rules/art/art_planet.tex}
+
+\twocolumn[\begin{justify}\section{Playing the game}\end{justify}]
+\subsection{Turn Structure}
+\label{sec:turns}
+\input{rules/rules_turns.tex}
+
+\subsection{Using Dice}
+\label{sec:dice}
+\input{rules/rules_dice.tex}
+%TODO Center this instead of using whitespace
+% \input{rules/art/art_dice.tex}
+
+\subsection{Fortifications}
+\label{sec:fortifications}
+\input{rules/rules_fortifications1.tex}
+%TODO Center this instead of using whitespace
+% \input{rules/art/art_spend_dice.tex}
+\input{rules/rules_fortifications2.tex}
+%TODO Center this instead of using whitespace
+% \input{rules/art/art_shuttle.tex}
+
+\subsection{Population}
+\label{sec:population}
+\input{rules/rules_population.tex}
+%TODO Center this instead of using whitespace
+% \input{rules/art/art_astronaut.tex}
+
+\subsection{Currency}
+\label{sec:currency}
+\input{rules/rules_currency.tex}
+
+\subsection{Technology}
+\label{sec:technology}
+\input{rules/rules_technology.tex}
+
+\subsection{Reach}
+\label{sec:reach}
+\input{rules/rules_reach.tex}
+
+\subsection{Military}
+\label{sec:military}
+\input{rules/rules_military.tex}
+%TODO Center this instead of using whitespace
+% \input{rules/art/art_ship.tex}
+
+\subsection{Trade and \convoys}
+\label{sec:trade}
+\input{rules/rules_trade.tex}
+
+\subsection{Culture}
+\label{sec:culture}
+\input{rules/rules_culture.tex}
+
+\subsection{Diplomacy}
+\label{sec:diplomacy}
+\input{rules/rules_diplomacy.tex}
+
+\subsection{Disasters}
+\label{sec:disasters}
+\input{rules/rules_disasters.tex}
+
+\subsection{Happiness}
+\label{sec:happiness}
+\input{rules/rules_happiness.tex}
+
+\subsection{End of the Game}
+\label{sec:endgame}
+\input{rules/rules_endgame.tex}
+
+\twocolumn[\begin{justify}\section{Additional Rules}\end{justify}]
+\subsection{Conscription and Taxation}
+\label{sec:anytime}
+\input{rules/rules_anytime.tex}
+
+\subsection{Learning game}
+\label{sec:learning}
+\input{rules/rules_learning.tex}
+
+\subsection{Open Information}
+\label{sec:information}
+\input{rules/rules_information.tex}
+
+\subsection{Order of Play}
+\label{sec:order}
+\input{rules/rules_order.tex}
+
+\subsection{Player Count}
+\label{sec:playercount}
+\input{rules/rules_playercount.tex}
+
+\subsection{Scoring}
+\label{sec:scoring}
+\input{rules/rules_scoring.tex}
+
+\subsection{Symbols}
+%TODO
+\label{sec:symbols}
+\input{rules/rules_symbols.tex}
+%TODO Center this instead of using whitespace
+% \input{rules/art/art_satellite.tex}
+
+\section{Customizing}
+\label{sec:customizing}
+\input{rules/rules_customizing.tex}
+
+\end{document}
