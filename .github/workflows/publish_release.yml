@@ -54,12 +54,16 @@ jobs:
         with:
           name: ascii_planets
 
-      - name: Display structure of downloaded files
+      - name: display structure of downloaded files
         run: ls -R
+
+      - name: get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
 
       - name: Build project # This would actually build your project, using zip for an example artifact
         run: |
-          zip ascii_planets_${{ github.ref }}.zip --junk-paths planet_sheet.pdf planet_sheet_grayscale.pdf rules.pdf
+          zip --junk-paths ascii_planets_${{ VERSION }}.zip planet_sheet.pdf planet_sheet_grayscale.pdf rules.pdf
 
       - name: create release
         id: create_release
