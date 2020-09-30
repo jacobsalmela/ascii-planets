@@ -1,0 +1,56 @@
+% !TEX TS-program = XeLaTeX
+% Set the font to a nice monospaced one
+% \setmainfont{Courier}
+\setmainfont[
+    Path=./fonts/Courier_Prime/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold
+]{CourierPrime}
+\setmonofont[
+    Path=./fonts/Courier_Prime/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic
+]{CourierPrime}
+% supplemental information (lighter-colored text)
+\definecolor{supplemental}{HTML}{C0C0C0}
+% Green die track - light
+\definecolor{antimatterlight}{HTML}{A6D0F7}
+% Green die track - dark
+\definecolor{antimatterdark}{HTML}{CADDB9}
+% Black die track - light
+\definecolor{engineeringlight}{HTML}{A6A6A6}
+% Black die track - dark
+\definecolor{engineeringdark}{HTML}{D9D9D9}
+% Culture
+\definecolor{culture}{HTML}{FBE3FF}
+% Damage/defend
+\definecolor{damage}{HTML}{B83930}
+% Currency
+\definecolor{currency}{HTML}{A6D498}
+% Happiness
+\definecolor{happiness}{HTML}{FEFFB0}
+% Unhappiness
+\definecolor{unhappiness}{HTML}{CAD8DE}
+% Trade
+\definecolor{trade}{HTML}{FAE7C8}
+% Military
+\definecolor{military}{HTML}{FFEDEB}
+% Land
+\definecolor{land}{HTML}{CADDB9}
+% Mountain
+\definecolor{mountain}{HTML}{FAF1EB}
+% Water
+\definecolor{water}{HTML}{BFF0FF}
+% Space
+\definecolor{space}{HTML}{cacacf}
+% Star
+\definecolor{stars}{HTML}{FFFFFF}
+% Nebula
+\definecolor{nebula}{HTML}{EED9FF}
+% Use fbox, but don't draw borders
+% This helps add a little buffer space between elements
+% I comment this out if I'm adjusting where components are so I can see the borders
+\setlength{\fboxrule}{0pt}

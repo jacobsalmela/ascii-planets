@@ -1,0 +1,31 @@
+% !TEX TS-program = XeLaTeX
+The art of war is of vital importance to your \planet.  Mustering and deploying \squadrons\ of \starships\ allows you to attack opponents or even establish an \battleship\ in their territory.  There are also ruthless \pirates, a non-player enemy faction which you may wage war against.
+\newline\newline
+\military\ units are produced by creating \starships.  Each time one of your \starships\ is \activated, you may cross off an \astronaut\ from your \population\ track (\gainastronautsymbol\ becoming \useastronautsymbol) and check the leftmost box of your \military\ track.  The boxes of the \military\ track are arranged in cohorts of two.  When a cohort is completely filled in, it becomes a \squadron.  Checking the final box triggers the end of the game and provides a scoring bonus.
+\newline\newline
+%TODO vars
+\squadrons\ can be deployed to various ends in the \deployment\ phase.  As you deploy a \squadron, you check the smaller box next to it (to show it has been used) and gain 1 point of \power\ (2 points instead if you are the defending or attacking side and have researched \shields\ or \lasers, respectively).  You may deploy several \squadrons\ at once.  As an attack is being resolved, players may deploy additional \squadrons.  Only after no one wishes to deploy any more \squadrons\ are the effects resolved.  \power\ is to be used instantly for \military\ actions: it does not carry over to the next turn.
+\newline\newline
+You may use 1 point of \power\ to defend against attacks:
+\begin{itemize}
+  \item Cancel a \pirate\ raid on your \planet\ (see \nameref{sec:disasters}, p.\pageref{sec:disasters}).
+  \item Reduce the \power\ of an opponent’s attack on you by \texttt{1}.
+  \item Reduce the \power\ of an opponent’s attack on another player by \texttt{1}, provided you have \reach\ to the defender.
+  \item Prevent the destruction of your \starship\ by the \terrorism\ \disaster\ (see \nameref{sec:disasters}, p.\pageref{sec:disasters}).
+\end{itemize}
+You may use 1 point of \power\ to attack:
+\begin{itemize}
+  \item Destroy a \pirate\ ship, provided there are unraided \pirates\ on a sheet you have \reach\ to (see \nameref{sec:reach}, p.\pageref{sec:reach}).  This yields you three \currency\ (\gaincurrency\gaincurrency\gaincurrency).  When all \pirates\ on your sheet are destroyed (regardless of who destroyed them), you immediately gain \texttt{2} \happiness.
+  \item Attack another player’s \planet\ to whom you have \reach.  They lose \texttt{1} \currency\ (if able) and gain \texttt{1} \unhappiness. If they lost \currency\, you gain \texttt{1} \currency.
+\end{itemize}
+You may use 2 points of \power\ to:
+\begin{itemize}
+  \item Establish a \battleship\ on another player’s territory where you have \reach\ to.
+  \item Raze an opponent’s \battleship\ on your territory.  The \battleship\ is crossed over and cannot be activated.  \battleships\ are permanent figures on other players’ territory.  They can only be established by a successful attack with \power\ \texttt{2} or more--not through regular construction.
+  \item A \battleship\ is established by drawing a 1x1 area on any free area on the opponent’s map.  Mark it with your \insignia/initials/distinguishing mark.
+  \item The \battleship\ may not touch or overlap other \fortifications.  If its outline intersects Nebulus terrain, pay \texttt{1} \currency.
+  \item The opponent may not build in the area taken by another player’s \battleship.
+\end{itemize}
+Example: Kashykk has three \squadrons\ and Alderaan has one.  The Kashykk player deploys two \squadrons\ for \texttt{2} \power\ to establish an \battleship\ in Alderaan.  The Alderaan player deploys their only \squadron, reducing Kashykk’s \power\ to \texttt{1}.  The Kashykk player now has a choice: they may use the single point for a regular attack or establish the \battleship\ by deploying their remaining \squadron\ for a total of \texttt{2} unopposed \power.
+\newline\newline
+\battleships\ can be \activated\ with a die showing \texttt{6}. When \activating\ an \battleship, you can \activate\ any one \fortification\ type, counting both your own \fortifications\ and the colonized players’ \fortifications\ (as if they belonged to you).  Those players then gain one \unhappiness.
