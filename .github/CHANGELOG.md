@@ -1,0 +1,3 @@
+- First public release of _ASCII Planets_
+- Feedback is always welcome at: https://github.com/jacobsalmela/ascii-planets/issues/new?template=feedback.md
+- Customize your game: https://github.com/jacobsalmela/ascii-planets/wiki/Customizing
