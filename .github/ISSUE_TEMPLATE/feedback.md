@@ -1,5 +1,5 @@
 ---
-name: 📓 Feedback on ASCII Planets
+name: 🌎 Feedback on ASCII Planets
 about: Provide feedback about gameplay, rules, adjustments, or anything else that will improve the game
 ---
 ##### Version of rulebook and Planet Sheet
