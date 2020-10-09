@@ -8,10 +8,10 @@
 \newcommand{\rpt}[3]{\foreach \x in {1,...,#1}{\fboxsep0pt\colorbox{#2}{\reducedstrut#3\/}}}
 % Make a new command which has the color and character needed for the map
 \newcommand{\spc}[1]{\rpt{#1}{space}{\color{stars}{\ .\ }}}
-\newcommand{\nbla}[1]{\rpt{#1}{nebula}{\color{stars}{\ .\ }}}
+\newcommand{\nbla}[1]{\rpt{#1}{nebula}{\color{stars}{\ ;\ }}}
 \newcommand{\lnd}[1]{\rpt{#1}{land}{\ .\ }}
-\newcommand{\wtr}[1]{\rpt{#1}{water}{\ .\ }}
-\newcommand{\mtn}[1]{\rpt{#1}{mountain}{\ .\ }}
+\newcommand{\wtr}[1]{\rpt{#1}{water}{\ -\ }}
+\newcommand{\mtn}[1]{\rpt{#1}{mountain}{\ "\ }}
 \newcommand{\prts}[1]{\rpt{#1}{space}{\color{stars}{\ P\ }}}
 \newcommand{\prtn}[1]{\rpt{#1}{nebula}{\color{stars}{\ P\ }}}
 % Now that we have those commads, it's easy to design your own by
