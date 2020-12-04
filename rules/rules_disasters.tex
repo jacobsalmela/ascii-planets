@@ -1,7 +1,8 @@
 % !TEX TS-program = XeLaTeX
-The \planet\ is under constant threat from calamities and \pirate\ raids.  \disasters\ are checked for each turn after the \diplomacy\ phase.
+The \planet\ is under constant threat from calamities and \pirate\ raids.  \disasters\ are checked after the \diplomacy\ phase if any dice showing 1 still remain.  These dice are re-rolled and their new value will determine what disaster strikes.
 \begin{enumerate}
-  \item If any dice showing the value \texttt{1} remain at this stage, they are rerolled separately from the rest.
+  \item If players paid to re-roll any die during the \diplomacy\ there may be no die to roll during this phase
+  \item If any dice showing the value \texttt{1} \textit{do} remain at this stage, they are rerolled separately from the rest.
   \item Each player looks at the results and checks the leftmost unchecked box from the \disaster\ grid rows corresponding to those numbers.
   \item If any further \texttt{1}s resulted from the reroll, the process is then repeated until no \texttt{1}s remain.
   \item The rerolled dice are then placed with the rest and may be used normally during the ensuing \development\ phase.
