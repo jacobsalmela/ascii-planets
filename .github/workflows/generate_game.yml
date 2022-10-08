@@ -3,7 +3,7 @@ on:
   push:
     # Just build the docs for anything that's not master
     branches-ignore:
-      - master
+      - main
 
 jobs:
   build_latex:
