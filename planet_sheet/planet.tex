@@ -7,6 +7,7 @@
 % This makes it easy to modify the map when needed
 \newcommand{\rpt}[3]{\foreach \x in {1,...,#1}{\fboxsep0pt\colorbox{#2}{\reducedstrut#3\/}}}
 % Make a new command which has the color and character needed for the map
+\newcommand{\ltr}[1]{\rpt{#1}{space}{\color{stars}{\ \ }}}
 \newcommand{\spc}[1]{\rpt{#1}{space}{\color{stars}{\ .\ }}}
 \newcommand{\nbla}[1]{\rpt{#1}{nebula}{\color{stars}{\ ;\ }}}
 \newcommand{\lnd}[1]{\rpt{#1}{land}{\ .\ }}
@@ -17,25 +18,48 @@
 % Now that we have those commads, it's easy to design your own by
 % Filling in values for where you want a certain land/space to go
 %\landtype{amount of dots}\newline
-\hspace*{10em}\spc{4}\nbla{5}\spc{11}\newline
-\hspace*{10em}\spc{3}\nbla{6}\spc{11}\newline
-\hspace*{10em}\spc{2}\nbla{4}\spc{14}\newline
-% % The planet starts here
-\hspace*{10em}\spc{9}\lnd{1}\wtr{1}\spc{9}\newline
-\hspace*{10em}\spc{8}\lnd{2}\wtr{2}\spc{8}\newline
-\hspace*{10em}\spc{7}\lnd{4}\mtn{1}\wtr{1}\spc{7}\newline
-\hspace*{10em}\spc{6}\lnd{5}\wtr{3}\spc{6}\newline
-\hspace*{10em}\prts{1}\spc{4}\lnd{10}\spc{5}\newline
-\hspace*{10em}\spc{4}\lnd{6}\wtr{2}\lnd{4}\spc{4}\newline
-\hspace*{10em}\prts{1}\spc{3}\lnd{12}\spc{4}\newline
-\hspace*{10em}\spc{4}\mtn{3}\lnd{9}\spc{4}\newline
-\hspace*{10em}\prts{1}\spc{3}\mtn{2}\wtr{1}\lnd{9}\spc{4}\newline
-\hspace*{10em}\spc{5}\lnd{10}\spc{5}\newline
-\hspace*{10em}\nbla{2}\spc{4}\lnd{2}\wtr{2}\lnd{4}\spc{6}\newline
-\hspace*{10em}\prtn{1}\nbla{2}\spc{4}\lnd{6}\spc{7}\newline
-\hspace*{10em}\nbla{4}\spc{4}\lnd{2}\mtn{1}\lnd{1}\spc{8}\newline
-\hspace*{10em}\prtn{1}\nbla{1}\spc{7}\lnd{2}\spc{9}\newline
-% The planet ends here
-\hspace*{10em}\nbla{4}\spc{16}\newline
-\hspace*{10em}\prtn{1}\nbla{4}\spc{15}\newline
-\hspace*{10em}\nbla{6}\spc{14}\newline
+\hspace*{10em}{\fboxsep0pt{\reducedstrut{\ \ }\/}}
+  {\fboxsep0pt{\reducedstrut{A\ }\/}}
+  {\fboxsep0pt{\reducedstrut{B\ }\/}}
+  {\fboxsep0pt{\reducedstrut{C\ }\/}}
+  {\fboxsep0pt{\reducedstrut{D\ }\/}}
+  {\fboxsep0pt{\reducedstrut{E\ }\/}}
+  {\fboxsep0pt{\reducedstrut{F\ }\/}}
+  {\fboxsep0pt{\reducedstrut{G\ }\/}}
+  {\fboxsep0pt{\reducedstrut{H\ }\/}}
+  {\fboxsep0pt{\reducedstrut{I\ }\/}}
+  {\fboxsep0pt{\reducedstrut{J\ }\/}}
+  {\fboxsep0pt{\reducedstrut{K\ }\/}}
+  {\fboxsep0pt{\reducedstrut{L\ }\/}}
+  {\fboxsep0pt{\reducedstrut{M\ }\/}}
+  {\fboxsep0pt{\reducedstrut{N\ }\/}}\newline
+\hspace*{10em}01\spc{4}\nbla{1}\spc{9}\newline
+\hspace*{10em}02\spc{5}\nbla{2}\spc{7}\newline
+\hspace*{10em}03\spc{14}\newline
+\hspace*{10em}04\spc{2}\prts{1}\spc{2}\lnd{2}\wtr{2}\spc{5}\newline
+\hspace*{10em}05\spc{1}\prts{1}\spc{2}\lnd{4}\wtr{2}\spc{4}\newline
+\hspace*{10em}06\spc{3}\mtn{1}\wtr{1}\lnd{5}\wtr{1}\spc{3}\newline
+\hspace*{10em}07\spc{2}\mtn{2}\wtr{1}\lnd{5}\wtr{2}\spc{2}\newline
+\hspace*{10em}08\spc{2}\lnd{5}\wtr{3}\lnd{2}\spc{2}\newline
+\hspace*{10em}09\spc{2}\lnd{6}\wtr{1}\mtn{2}\lnd{1}\spc{2}\newline
+\hspace*{10em}10\spc{2}\lnd{3}\wtr{1}\lnd{3}\mtn{1}\lnd{2}\spc{2}\newline
+\hspace*{10em}11\spc{2}\lnd{10}\spc{2}\newline
+\hspace*{10em}12\spc{3}\lnd{8}\spc{3}\newline
+\hspace*{10em}13\spc{4}\lnd{6}\spc{4}\newline
+\hspace*{10em}14\nbla{3}\spc{2}\lnd{4}\spc{5}\newline
+\hspace*{10em}15\spc{2}\prtn{2}\spc{4}\prts{2}\spc{4}\newline
+\hspace*{10em}16\spc{1}\nbla{2}\spc{11}\newline
+\hspace*{10em}17\nbla{2}\spc{12}\newline
+\hspace*{10em}18\nbla{2}\spc{12}\newline
+
+% . . . . . . . . . . . .
+% . N . . P . . P . . . .
+% . . . . - - - - . . . .
+% . . . - - - - - - . . .
+% . . - - - - - - - - . . 
+% . - - - - - - - - - - .
+% . - - - - - - - - - - . 
+% . . - - - - - - - - . .
+% N N . - - - - - - . . . 
+% P N . . - - - - . P N .
+% P N . . . . N N . N P .
