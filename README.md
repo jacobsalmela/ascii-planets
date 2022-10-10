@@ -8,7 +8,7 @@
 
 You can download pre-made game files [here](https://github.com/jacobsalmela/ascii-planets/releases), just print and _play_ (color and grayscale versions available).
 
-GitHub Actions will auto-build the PDFs, but if you want to generate your own files using XeLaTeX, you can do so like this:
+If you want to generate your own files using XeLaTeX, you can do so like this:
 
 ```
 git clone https://github.com/jacobsalmela/ascii-planets.git
@@ -16,6 +16,8 @@ cd ascii-planets
 xelatex rules.tex
 xelatex planet_sheet.tex
 ```
+
+Make your own fork and GitHub actions should auto-build your PDFs whenever you push code.  This is useful if you don't have your own LaTeX environment setup.  There are also several Docker containers you can run if you cannot or do not want to install LaTeX locally.
 
 ### Feedback On The Game
 Just create a new issue here on GitHub by [filling out the template](https://github.com/jacobsalmela/ascii-planets/issues/new?template=feedback.md).  Feel free to add additional comments as necessary.  You can also add feedback on Board Game Geek.
@@ -31,5 +33,3 @@ You can customize your game by changing a few lines of code.  Modify the colors 
 ## How To Play
 The rulebook is included on the [Releases page](https://github.com/jacobsalmela/ascii-planets/releases).
 
-# Contributing
-Contributions and pull requests are welcome!  Make your own branch and GitHub actions should auto-build your PDFs whenever you push code.  This is useful if you don't have your own LaTeX environment setup.
