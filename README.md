@@ -1,7 +1,7 @@
 <p align="center">
   <strong>ASCII Planets</strong> is a spacefaring expansion to ASCII Empires (a "roll-and-write" board game of civilization building for 1-7 players)
   <br>
-  <img src="https://user-images.githubusercontent.com/3843505/94575720-26f6cf80-023a-11eb-9fdf-15091fc5c396.png" alt="ascii-planets-sheet">
+  <img src="https://user-images.githubusercontent.com/3843505/194853888-ebce3be6-8e45-4324-9346-a7d3999bf558.png" alt="ascii-planets-sheet">
 </p>
 
 ## Game Files
