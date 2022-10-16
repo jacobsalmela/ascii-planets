@@ -1,35 +1,74 @@
 % !TEX TS-program = XeLaTeX
-Example: The 3 \whitedice\ display values \texttt{2}, \texttt{3} and \texttt{4} and you have \texttt{1} \greatperson\ available.  
-If all three dice are used for construction, the total number possible is \texttt{2+3+4 = 9}.  
-This is enough to construct an \academy\ or \factory, each of which cost \texttt{8} to complete.  
-The remainder (\texttt{9-8 = 1}) is lost, because no \armaments cost \texttt{1}. 
-Alternatively, you could use only the \texttt{4} result and the \greatperson\ bonus of \texttt{+4}, sparing the \texttt{2} and \texttt{3} results for \activating\ \armaments, \trade, or \culture.
+Example: The 3 \whitedice\ display values \texttt{2}, \texttt{3} and \texttt{4} 
+and you have \texttt{1} \greatperson\ available.  If all three dice are used for
+construction, the total number possible is \texttt{2+3+4 = 9}.  This is enough 
+to construct an \academy\ or \factory, each of which cost \texttt{8} to 
+complete.  The remainder (\texttt{9-8 = 1}) is lost, because no \armaments cost 
+\texttt{1}. Alternatively, you could use only the \texttt{4} result and the 
+\greatperson\ bonus of \texttt{+4}, sparing the \texttt{2} and \texttt{3} 
+results for \activating\ \armaments, \trade, or \culture.
 \newline\newline
-There are six different \armaments\ to create (see \nameref{sec:armaments}, p.\pageref{sec:armaments}) spread across three \levels.
+There are six different \armaments\ to create (see \nameref{sec:armaments}, 
+p.\pageref{sec:armaments}) spread across three \levels.
+
 \begin{itemize}
-	\item To construct a \level\ II \armament\ , you need to have at least one staffed \armament\ of each \level\ I type.  Correspondingly, both \level\ II types are prerequisite for \level\ III.
-	\item Constructing all \level\ III \armaments\ triggers the end of the game and provides a scoring bonus.  Some rules always apply when constructing:
+	\item To construct a \level\ II \armament\ , you need to have at least one 
+        staffed \armament\ of each \level\ I type.  Correspondingly, both 
+        \level\ II types are prerequisite for \level\ III.
+	\item Constructing all \level\ III \armaments\ triggers the end of the game 
+        and provides a scoring bonus.  Some rules always apply when 
+        constructing:
   \begin{itemize}
     \item Any number of \armaments\ can be constructed on a turn
-    \item An \armament\ must to be completed (its cost fully paid for) on a single turn. (You may not start constructing a \armament and finish it on a later turn.)
-    \item An \armament\ must also be staffed on a single turn by crossing one of your available \astronauts\ (\gainastronautsymbol\ becoming \useastronautsymbol) and marking the letter (e.g. \academysymbol\ for \academy) inside the \armament. The \astronaut\ is now a \specialist\ working in that \armament.
-    \item \armaments\ cannot touch, including \armaments\ destroyed by game effects
-    \item If any \armaments\ would intersect Mountainous terrain or a Nebula, the construction costs one (\spendcurrency) \currency and those \armaments\ gain +1 defense. (If you have no \currency, you may not build there.)  
-		\item Staffed \armaments\ can be \activated\ using a die.  When \activated, each \armament\ produces a distinct advantage (see \nameref{sec:armaments}, p.\pageref{sec:armaments}).
-	  \item The \spacestation\ is constructed like any other \armaments\ but since it is not \activated\ you can simply Staff it as you would any other \armaments\ and it will earn you points at the end of the game--so long as it isn't destroyed.
-	  \item \armaments\ in space (\starships, \battleships, and the \spacestation) can be built in a \nebula to recieve +1 defence
-	  \item players must pay +1 to have space junk cleared by scrappers if they wish to build space \armaments\ over a piece of Space Junk (\spacejunksymbol)
+    \item An \armament\ must to be completed (its cost fully paid for) on a 
+          single turn. (You may not start constructing a \armament and finish it
+          on a later turn.)
+    \item An \armament\ must also be staffed on a single turn by crossing one of
+          your available \astronauts\ (\gainastronautsymbol\ becoming 
+          \useastronautsymbol) and marking the letter (e.g. \academysymbol\ for
+          \academy) inside the \armament. The \astronaut\ is now a \specialist\ 
+          working in that \armament.
+    \item \armaments\ cannot touch, including \armaments\ destroyed by game 
+          effects
+    \item If any \armaments\ would intersect Mountainous terrain or a Nebula, 
+          the construction costs one (\spendcurrency) \currency and those 
+          \armaments\ gain +1 defense. (If you have no \currency, you may not 
+          build there.)  
+		\item Staffed \armaments\ can be \activated\ using a die.  When \activated, 
+          each \armament\ produces a distinct advantage (see \nameref{sec:armaments}, 
+          p.\pageref{sec:armaments}).
+	  \item The \spacestation\ is constructed like any other \armaments\ but since
+          it is not \activated\ you can simply Staff it as you would any other 
+          \armaments\ and it will earn you points at the end of the game--so 
+          long as it isn't destroyed.
+	  \item \armaments\ in space (\starships, \battleships, and the \spacestation)
+          can be built in a \nebula to recieve +1 defence
+	  \item players must pay +1 to have space junk cleared by scrappers if they 
+          wish to build space \armaments\ over a piece of Space Junk (\spacejunksymbol)
   \end{itemize}
   \item A single die may activate all of your \armaments\ of the same type.
   \item A single die may only activate one type of \armament.
-  \item an \armament\ may be activated any number of times each turn, including \starships\ and \battleships.
-  \item an \armament\ may be activated on the same turn it was built, provided it is staffed and a suitable die is still available.
-  \item Destroyed \armaments\ cannot be rebuilt on the same space, but a new one can be constructed on a free spot on the map
+  \item an \armament\ may be activated any number of times each turn, including 
+        \starships\ and \battleships.
+  \item an \armament\ may be activated on the same turn it was built, provided 
+        it is staffed and a suitable die is still available.
+  \item Destroyed \armaments\ cannot be rebuilt on the same space, but a new one
+        can be constructed on a free spot on the map
 \end{itemize}
-To activate a \armament, the die must have a high enough value.  An \academy\ can be activated with any die equal to or greater than \texttt{2}, while \starships\ can only be activated with a \texttt{5} or \texttt{6}.  All \armaments--including \battleships--can be activated from a single die.  The die values necessary to activate an \armament\ are shown in the table on the \planetsheet.
+To activate a \armament, the die must have a high enough value.  An \academy\ 
+can be activated with any die equal to or greater than \texttt{2}, while 
+\starships\ can only be activated with a \texttt{5} or \texttt{6}.  All 
+\armaments--including \battleships--can be activated from a single die.  The die
+ values necessary to activate an \armament\ are shown in the table on the 
+ \planetsheet.
 \newline\newline
-A \texttt{6} may activate any \armament\ type. A \texttt{3} can activate \factory\ or \academy, while a \texttt{2} may only activate \academy.
+A \texttt{6} may activate any \armament\ type. A \texttt{3} can activate 
+\factory\ or \academy, while a \texttt{2} may only activate \academy.
 \newline\newline
-Example: You have two \labs\ and an \academy\ and access to dice showing the results \texttt{2}, \texttt{4} and \texttt{5}.  You may use both \texttt{4} and \texttt{5} to activate the two \labs\ (for a total output of \texttt{4} \tech) and the \texttt{2} to activate the \academy\ (to produce one \astronaut\ for the \population\ track).
+Example: You have two \labs\ and an \academy\ and access to dice showing the 
+results \texttt{2}, \texttt{4} and \texttt{5}.  You may use both \texttt{4} and
+\texttt{5} to activate the two \labs\ (for a total output of \texttt{4} \tech) 
+and the \texttt{2} to activate the \academy\ (to produce one \astronaut\ for the
+ \population\ track).
 % TODO: Convert this to a table
 
