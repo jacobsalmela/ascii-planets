@@ -36,7 +36,7 @@ jobs:
           gs -sOutputFile=./planet_sheet_grayscale.pdf -sDEVICE=pdfwrite -sColorConversionStrategy=Gray -dProcessColorModel=/DeviceGray -dCompatibilityLevel=1.4 -dAutoRotatePages=/None -dNOPAUSE -dBATCH ./planet_sheet.pdf
 
       - name: upload pdf artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ascii_planets
           path: ./*.pdf
@@ -61,7 +61,7 @@ jobs:
         run: |
           sudo chown -R $USER:$(id -gn $USER) ./
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4
         with:
           name: ascii_planets
 
